@@ -19,13 +19,24 @@ def small(str):
     for pr in range(n): 
         for br in range(n): 
             su = str[pr:br] 
-            length1 = len(su) 
-            subjet = max(su,lenght1) 
-            if (lenght1 < minl and max1 == subjet): 
-                minl = lenght1 
+            subslenght = len(su) 
+            subjet = max(su,subslenght) 
+            if (subslenght < minl and 
+                max1 == subjet): 
+                minl = subslenght 
   
     return minl 
 if __name__ == "__main__": 
     str = input()
-    l = small(str); 
-    print( l) 
+    a=[]
+    s= " "
+    for i in str:
+       if(i.islower()):
+           
+           a.append(i)
+           s=s.join(a)
+           
+           
+            
+    l = small(s); 
+    print(l) 
