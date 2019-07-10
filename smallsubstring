@@ -1,11 +1,11 @@
-NO_OF_CHARS = 256
+length= 10000
 def max(str, n): 
-    count = [0] * NO_OF_CHARS 
+    count = [0] * length 
     for i in range(n): 
         count[ord(str[i])] += 1
       
     cou = 0
-    for i in range(NO_OF_CHARS): 
+    for i in range(length): 
         if (count[i] != 0): 
             cou += 1    
       
